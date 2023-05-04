@@ -1,0 +1,15 @@
+{
+  "name": "Kaidex",
+  "schemaPath": "schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "Kaidex": {
+        "url": "https://ex-graph-v3.kardiachain.io/subgraphs/name/kaidex-v3/exchange2",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": false
+      }
+    }
+  }
+}
