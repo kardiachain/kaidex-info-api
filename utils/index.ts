@@ -42,7 +42,7 @@ export async function getTokenByAddress(address: string): Promise<Token> {
 }
 
 export async function getKaiPrice(): Promise<any> {
-  let result = await client.query({
+  const result = await client.query({
     query: KAI_PRICE,
     fetchPolicy: "no-cache",
   });

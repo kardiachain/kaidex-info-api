@@ -24,7 +24,7 @@ export default async function (req: Request, res: Response): Promise<void> {
   try {
     const topPairs = await getTopPairs();
 
-    const pairs: any = topPairs.reduce<ReturnShape>((accumulator, pair: any): ReturnShape => {
+    const pairs: ReturnShape = topPairs.reduce<ReturnShape>((accumulator, pair: any): ReturnShape => {
       const pId = getAddress(pair.id);
       const t0Id = getAddress(pair.token0.id);
       const t1Id = getAddress(pair.token1.id);
